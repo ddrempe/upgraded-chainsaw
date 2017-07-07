@@ -7,14 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   username = '';
-  allowClick = false;
-  onInputUpdate(event: Event) {
-    if (this.username === '') {
-      this.allowClick = false;
-    }
-  }
-
-  onButtonClick() {
-    this.username = '';
-  }
 }
