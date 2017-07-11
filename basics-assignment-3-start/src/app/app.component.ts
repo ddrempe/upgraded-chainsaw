@@ -27,4 +27,10 @@ export class AppComponent {
       return 'blue';
     }
   }
+
+  getLogClass(log) {
+    if (log > 5) {
+      return true;
+    }
+  }
 }

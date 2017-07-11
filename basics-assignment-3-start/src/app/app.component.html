@@ -24,7 +24,8 @@
           <div class="col-xs-6">
             <p
               *ngFor="let log of displayToggleLogs"
-              [ngStyle]="{backgroundColor: getBkgColor(log)}">{{log}}</p>
+              [ngStyle]="{backgroundColor: getBkgColor(log)}"
+              [ngClass]="{whiteBkg: getLogClass(log)}">{{log}}</p>
           </div>
           <div class="col-xs-6">
             <p *ngFor="let logT of displayToggleLogsWithTimestamp">{{logT}}</p>
