@@ -7,29 +7,29 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   displayIsEnabled = false;
-  displayToggleLogs = [''];
-  displayToggleLogsWithTimestamp = [''];
-  logCounter;
+  // displayToggleLogs = [];
+  displayToggleLogsWithTimestamp = [];
+  // logCounter;
 
   constructor() {
-    this.logCounter = 0;
+    // this.logCounter = 0;
   }
 
   enableDisplay() {
     this.displayIsEnabled = (!this.displayIsEnabled);
-    this.logCounter++;
-    this.displayToggleLogs.push(this.logCounter);
+    // this.logCounter++;
+    // this.displayToggleLogs.push(this.logCounter);
     this.displayToggleLogsWithTimestamp.push(new Date().toLocaleString());
   }
 
-  getBkgColor(log) {
-    if (log > 5) {
+  getBkgColor(index) {
+    if (index > 5) {
       return 'blue';
     }
   }
 
-  getLogClass(log) {
-    if (log > 5) {
+  getLogClass(index) {
+    if (index > 5) {
       return true;
     }
   }
